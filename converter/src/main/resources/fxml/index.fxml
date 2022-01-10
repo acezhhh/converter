@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400" prefWidth="600" stylesheets="/css/index.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.acezhhh.converter.controller.IndexController">
+   <children>
+      <TextArea fx:id="inputText" layoutX="59.0" layoutY="98.0" prefHeight="159.0" prefWidth="469.0" />
+      <Label layoutX="245.0" layoutY="37.0" text="转换工具">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="59.0" layoutY="277.0" mnemonicParsing="false" onAction="#toUpperCase" text="全大写" />
+      <Button layoutX="155.0" layoutY="277.0" mnemonicParsing="false" onAction="#toLowerCase" text="全小写" />
+      <Button layoutX="396.0" layoutY="277.0" mnemonicParsing="false" onAction="#toUnderline" text="驼峰转下划线" />
+      <Button layoutX="246.0" layoutY="277.0" mnemonicParsing="false" onAction="#toHump" text="下划线转驼峰" />
+      <Button layoutX="59.0" layoutY="333.0" mnemonicParsing="false" onAction="#toJsonFormat" text="格式化" />
+   </children>
+</AnchorPane>
